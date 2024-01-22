@@ -1,3 +1,54 @@
+# phase2-project
+
+About:
+
+Muse is intended to be a gallery for artists all over the world to showcase their artwork and to likewise view and interact with other pieces. It is an amalgamation of art from varying mediums, which anyone is allowed to partake in and leave their mark in this open forum and public museum.
+
+In this space, every artist, whether amateur or professional and every art enthusiast finds a community. Muse facilitates a dialogue between the creator and the observer, making art accessible to everyone. Through this platform, we aim to invite everyone to experience the beauty and diversity of artistic expression in one accessible, online location.
+
+Deliverables and Parent/Child Structure:
+
+1. SPA Setup
+
+Use 'create-react-app'
+Use single-HTML file
+
+2. Components/Parent-Child Architecture
+
+App()
+├─ Header()
+│  ├─ Navigation (Home, Collection, Submit Art) // onMouseOver for hover effect, onClick for routing
+│  
+├─ HomePage()
+│  ├─ Featured Artwork() // onClick for detailed view
+│  
+├─ CollectionPage()
+│  ├─ Artwork Grid()
+│  │  ├─ Artwork Thumbnail() // onMouseOver for hover effect, onClick for detail view
+│  
+├─ SubmitArtPage()
+│  ├─ Art Submission Form()
+│  │  ├─ TextInput() (For artwork name, artist name, etc.) // onChange to update state
+│  │  ├─ TextArea() (For artwork description) // onChange to update state
+│  │  ├─ FileUpload (For artwork image) // onChange to handle file selection
+│  │  ├─ Submit Button() // onClick to submit form
+│  │  ├─ Submission Success Message (Conditional Rendering) // based on submission status
+│  
+└─ Footer
+   ├─ SocialMediaLinks (Optional) // onClick for external navigation
+
+3. Client-Side Routing for 3 routes
+
+Setup routes for '/collection', '/submit-art', and '/' (homepage)
+
+4. API Interaction
+
+Set up 'json-server' for backend storing information on artists and artworks
+Make one GET request to fetch artworks for the collection page
+Make one POST request to submit new artwork via the Submit Art form
+
+5. State Management
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
