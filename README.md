@@ -12,8 +12,8 @@ Deliverables and Parent/Child Structure:
 
 1. SPA Setup
 
-Use 'create-react-app'
-Use single-HTML file
+Use 'create-react-app' ✅
+Use single-HTML file ✅
 
 2. Components/Parent-Child Architecture
 
@@ -50,6 +50,8 @@ Make one GET request to fetch artworks for the collection page
 Make one POST request to submit new artwork via the Submit Art form
 
 5. State Management
+
+Use React's state management capabilities to handle the dynamic content, such as the list of artworks in the collection and the submission form state. Ensure that submitting a new artwork updates the collection view without a manual refresh.
 
 # Getting Started with Create React App
 

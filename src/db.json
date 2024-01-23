@@ -1,0 +1,69 @@
+{
+"artists": [
+  {
+    "id": "a-1",
+    "name": "Trent Ward",
+    "bio": "I'm Trent Ward, a clarinet player turned artist. My work is where my two passions meet: music and art. Through my pieces, I aim to create a symphony of colors that resonate with the harmony and melody of life.",
+    "artworks": [
+      {
+        "id": "aw-1",
+        "name": "Squid in Yellow",
+        "description": "This piece, 'Squid in Yellow,' is my playful tribute to the SpongeBob SquarePants series. It's a reimagination of a familiar character, blending nostalgia with my personal artistic style.",
+        "imageUrl": "a1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "a-2",
+    "name": "Anita Browne",
+    "bio": "I'm Anita Browne, once an accountant, now a mother of three and an aspiring artist. My paintings are windows to my past, each one telling a story from a chapter of my life. Art is my way of holding onto those precious moments.",
+    "artworks": [
+      {
+        "id": "aw-2",
+        "name": "Meet Me at Montauk",
+        "description": "'Meet Me at Montauk' captures the essence of my teenage summers spent in Montauk. It's a piece filled with the warmth of the sun and the joy of family gatherings, a reminder of my cherished memories.",
+        "imageUrl": "a2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "a-3",
+    "name": "Dave Smith",
+    "bio": "I'm Dave Smith, a stay-at-home dad finding joy and purpose in sharing my art with the world. My creations are a mix of personal reflections and the pure, unfiltered imagination of my son.",
+    "artworks": [
+      {
+        "id": "aw-3",
+        "name": "Space on The Fridge",
+        "description": "'Space on The Fridge' isn't just my artwork; it's a proud display of my son's creativity. Posted on our fridge, it represents the unbridled joy and innocence of childhood I strive to capture in my pieces.",
+        "imageUrl": "a3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "a-4",
+    "name": "Marcus Perry",
+    "bio": "Hello, I'm Marcus Perry. My fascination with manga and anime transcends the screen to manifest in my art. 'Your Lie In April' struck a chord with me, inspiring me to blend my passions into artworks that others might find just as moving.",
+    "artworks": [
+      {
+        "id": "aw-4",
+        "name": "Your Lie In April",
+        "description": "This artwork, inspired by the anime 'Your Lie In April,' is my homage to the series. It explores themes of youth, music, and love, intertwined with my personal artistic interpretation.",
+        "imageUrl": "a4.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "a-5",
+    "name": "Eve Kowalski",
+    "bio": "I'm Eve Kowalski, from Poland, with a simple love for drawing and capturing the beauty of nature. My art is my sanctuary, a place where the simplicity of life meets the complexity of my thoughts.",
+    "artworks": [
+      {
+        "id": "aw-5",
+        "name": "A New Chapter",
+        "description": "'A New Chapter' symbolizes the rebirth and new beginnings as seen in the blooming of roses. It's a piece that reflects hope, growth, and the beauty of starting anew.",
+        "imageUrl": "a5.jpeg"
+      }
+    ]
+  }
+]
+}
