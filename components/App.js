@@ -8,19 +8,19 @@ import Footer from './components/Footer/Footer';
 import './App.css'; 
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/collection" component={CollectionPage} />
-          <Route path="/submit-art" component={SubmitArtPage} />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
-  );
+return (
+  <Router>
+    <div className="App">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/collection" component={CollectionPage} />
+        <Route path="/submit-art" component={SubmitArtPage} />
+      </Switch>
+      <Footer />
+    </div>
+  </Router>
+);
 }
 
 export default App;

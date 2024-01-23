@@ -12,17 +12,17 @@ Deliverables and Parent/Child Structure:
 
 1. SPA Setup
 
-Use 'create-react-app' ✅
-Use single-HTML file ✅
+✅ Use 'create-react-app' 
+✅ Use single-HTML file 
 
 2. Components/Parent-Child Architecture
 
-App()
-├─ Header()
-│  ├─ Navigation (Home, Collection, Submit Art) // onMouseOver for hover effect, onClick for routing
+✅ App()
+├─ ✅ Header()
+│  ├─ ✅ Navigation (Home, Collection, Submit Art) // onMouseOver for hover effect, onClick for routing
 │  
-├─ HomePage()
-│  ├─ Featured Artwork() // onClick for detailed view
+├─ ✅ HomePage()
+│  ├─ ✅ Featured Artwork() // onClick for detailed view
 │  
 ├─ CollectionPage()
 │  ├─ Artwork Grid()
