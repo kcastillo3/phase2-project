@@ -24,9 +24,9 @@ Deliverables and Parent/Child Structure:
 ├─ ✅ HomePage()
 │  ├─ ✅ Featured Artwork() // onClick for detailed view
 │  
-├─ CollectionPage()
-│  ├─ Artwork Grid()
-│  │  ├─ Artwork Thumbnail() // onMouseOver for hover effect, onClick for detail view
+├─ ✅✅CollectionPage()
+│  ├─ ✅✅Artwork Grid()
+│  │  ├─ ✅✅Artwork Thumbnail() // onMouseOver for hover effect, onClick for detail view
 │  
 ├─ SubmitArtPage()
 │  ├─ Art Submission Form()
