@@ -1,5 +1,3 @@
-File Upload:
-
 import React from 'react';
 
 const FileUpload = ({ label, onFileChange, name }) => {

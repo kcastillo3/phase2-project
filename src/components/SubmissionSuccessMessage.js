@@ -1,5 +1,3 @@
-SubmissionSuccessMessage.js
-
 import React from 'react';
 
 const SubmissionSuccessMessage = ({ message }) => {

@@ -5,11 +5,10 @@ const [artworkName, setArtworkName] = useState('');
 const [description, setDescription] = useState('');
 const [artistName, setArtistName] = useState('');
 const [bio, setBio] = useState('');
-const [image, setImage] = useState(''); // To hold the image URL
+const [image, setImage] = useState(''); 
 
 const handleSubmit = (e) => {
 e.preventDefault();
-// You would handle form submission here
 };
 
 const handleImageChange = (e) => {
