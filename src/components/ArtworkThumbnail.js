@@ -1,22 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import ArtworkThumbnail from './ArtworkThumbnail';
+import React from 'react';
 
-function ArtworkGrid() {
- const [artworks, setArtworks] = useState([]);
+function ArtworkThumbnail({ artwork }) {
+  const imageUrl = `/images/${artwork.imageUrl}`;
 
- useEffect(() => {
-    fetch('/db.json')
-      .then(response => response.json())
-      .then(data => setArtworks(data));
- }, []);
-
- return (
-    <div className="artwork-grid">
-      {artworks.map(artwork => (
-        <ArtworkThumbnail key={artwork.id} artwork={artwork} />
-      ))}
-    </div>
- );
+return (
+  <div className="artwork-thumbnail">
+    <img src={imageUrl} alt={artwork.title} />
+    <h3>{artwork.title}</h3>
+    {/* Other artwork details */}
+  </div>
+);
 }
 
-export default ArtworkGrid;
+export default ArtworkThumbnail;

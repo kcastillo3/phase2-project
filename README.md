@@ -39,17 +39,17 @@ Deliverables and Parent/Child Structure:
 └─ ✅Footer
    ├─ SocialMediaLinks (Optional) // onClick for external navigation
 
-3. Client-Side Routing for 3 routes
+3. Client-Side Routing for 3 routes ✅
 
 Setup routes for '/collection', '/submit-art', and '/' (homepage)
 
-4. API Interaction
+4. API Interaction ✅
 
 Set up 'json-server' for backend storing information on artists and artworks
 Make one GET request to fetch artworks for the collection page
 Make one POST request to submit new artwork via the Submit Art form
 
-5. State Management
+5. State Management ✅
 
 Use React's state management capabilities to handle the dynamic content, such as the list of artworks in the collection and the submission form state. Ensure that submitting a new artwork updates the collection view without a manual refresh.
 

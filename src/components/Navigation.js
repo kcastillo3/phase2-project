@@ -1,7 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'; 
-/* - Handle CSS for Links and How They Are Interacted With According to Wireframe
-   - Hoover and Click Events in CSS for the links*/
 
 function Navigation() {
 return (

@@ -1,43 +1,117 @@
-/* src/App.css */
-
-/* Global styles */
-.App {
-  text-align: center;
+body {
+  font-family: 'Inknut Antiqua', serif;
+  color: #333; /* Subdued text color */
+  background-color: #f9f9f9; /* Neutral background */
+  line-height: 1.6;
 }
 
-/* Header styles */
-.header {
+/* Navigation bar */
+.navigation {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #282c34;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header .logo {
-  color: white;
-  font-weight: bold;
-}
-
-/* Navigation styles */
 .navigation a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.navigation a.active {
-  text-decoration: underline;
-}
-
-/* HomePage styles */
-.home-page .welcome-section,
-.home-page .featured-artwork {
-  padding: 1rem;
   color: #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none; /* Remove link underline */
+  font-weight: 500;
 }
 
-/* Footer styles */
-/* Add your footer styles here */
+.navigation a:not(.active):hover,
+.navigation a:not(.active):focus {
+  color: #555;
+}
 
-/* Styles for other components like CollectionPage and SubmitArtPage */
-/* Add them here */
+/* Hero section */
+.welcome-section h1 {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Page section styles */
+.page-section {
+  padding: 3rem 2rem;
+}
+
+/* Featured artwork and artwork thumbnails */
+.featured-artwork img,
+.artwork-thumbnail img {
+  width: 95%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation dots */
+.navigation-dots .dot {
+  background-color: #ddd;
+  transition: background-color 0.3s;
+}
+
+.navigation-dots .dot.active {
+  background-color: #333;
+}
+
+/* Artwork grid */
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Submission form */
+.submit-art-form {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.submit-art-form button {
+  background-color: #333;
+  color: #fff; /* Ensure button text is visible */
+  border: none; /* Remove default border */
+  padding: 1rem 2rem; /* Larger click area */
+  font-size: 1rem; /* Match font size to form inputs */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s;
+}
+
+.submit-art-form button:hover {
+  background-color: #444;
+}
+
+/* Preview section */
+.preview-section {
+  flex: 1; /* Allow the preview section to grow */
+  margin-left: 2rem; /* Add some space between the sections */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center; /* Center items for mobile */
+  }
+
+  .navigation a {
+    margin-bottom: 0.5rem; /* Add space between links */
+  }
+
+  /* Smaller border radius for mobile */
+  .featured-artwork img,
+  .artwork-thumbnail img {
+    border-radius: 10px;
+  }
+  
+  /* Adjust grid for smaller screens */
+  .artwork-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

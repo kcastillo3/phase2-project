@@ -1,18 +1,17 @@
 import React from 'react';
 import Navigation from './Navigation';
 import logo from './logo.png'; 
-/* - Handle CSS for Logo Image*
-   - Perhaps a hoover event on CSS*/
-
 
 function Header() {
 return (
-<header className="header">
+    <header className="header">
     <div className="logo">
-    <img src={logo} alt="Muse Logo" />
+        <a href="/" className="home-link">
+        <img src={logo} alt="Muse Logo" />
+        </a>
     </div>
     <Navigation />
-</header>
+    </header>
 );
 }
 
