@@ -5,6 +5,11 @@ body {
   line-height: 1.6;
 }
 
+.logo {
+  width: 456px; /* Original width */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Navigation bar */
 .navigation {
   display: flex;

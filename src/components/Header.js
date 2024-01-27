@@ -1,18 +1,12 @@
 import React from 'react';
 import Navigation from './Navigation';
-import logo from './logo.png'; 
 
 function Header() {
-return (
+  return (
     <header className="header">
-    <div className="logo">
-        <a href="/" className="home-link">
-        <img src={logo} alt="Muse Logo" />
-        </a>
-    </div>
-    <Navigation />
+      <Navigation />
     </header>
-);
+  );
 }
 
 export default Header;
