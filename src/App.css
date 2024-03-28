@@ -1,122 +1,210 @@
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Inknut Antiqua', serif;
-  color: #333; /* Subdued text color */
-  background-color: #f9f9f9; /* Neutral background */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
   line-height: 1.6;
 }
 
-.logo {
-  width: 456px; /* Original width */
-  height: auto; /* Maintain aspect ratio */
+/* Utility Classes */
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
 }
 
-/* Navigation bar */
-.navigation {
+/* Input Group Styles */
+.input-group {
+  margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group button {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navigation a {
-  color: #333;
-  padding: 0.5rem 1rem;
-  text-decoration: none; /* Remove link underline */
-  font-weight: 500;
+.input-group input[type="file"] {
+  border: none;
 }
 
-.navigation a:not(.active):hover,
-.navigation a:not(.active):focus {
-  color: #555;
-}
-
-/* Hero section */
-.welcome-section h1 {
-  font-size: 4rem;
-  color: #333;
-  margin-bottom: 1.5rem;
-}
-
-/* Page section styles */
-.page-section {
-  padding: 3rem 2rem;
-}
-
-/* Featured artwork and artwork thumbnails */
-.featured-artwork img,
-.artwork-thumbnail img {
-  width: 95%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Navigation dots */
-.navigation-dots .dot {
-  background-color: #ddd;
+/* Buttons */
+button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
   transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Artwork Grid & Thumbnail */
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-thumbnail {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.artwork-thumbnail:hover {
+  transform: translateY(-5px);
+}
+
+.artwork-thumbnail img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.artwork-thumbnail h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Page & Section Styles */
+.collection-page, .home-page, .featured-artwork {
+  padding: 20px;
+}
+
+.collection-page h1, .home-page .welcome-section h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome-section p, .artwork-display p, .collection-page p {
+  color: #666;
+}
+
+/* Header & Footer */
+.header, .footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header nav a, .footer-content p {
+  color: #fff;
+  padding: 0 15px;
+}
+
+.navigation-dots .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.navigation-dots .dot.active, .navigation-dots .dot:hover {
+  background-color: #333;
+}
+
+/* Success Message */
+.success-message {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.featured-artwork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+}
+
+.artwork-display img {
+  max-width: 100%;
+  max-height: 500px; /* Adjust based on your preference */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.artwork-display h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.artwork-display p {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.navigation-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigation-dots .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .navigation-dots .dot.active {
   background-color: #333;
 }
 
-/* Artwork grid */
-.artwork-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-/* Submission form */
-.submit-art-form {
-  background-color: #fff;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.submit-art-form button {
-  background-color: #333;
-  color: #fff; /* Ensure button text is visible */
-  border: none; /* Remove default border */
-  padding: 1rem 2rem; /* Larger click area */
-  font-size: 1rem; /* Match font size to form inputs */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s;
-}
-
-.submit-art-form button:hover {
-  background-color: #444;
-}
-
-/* Preview section */
-.preview-section {
-  flex: 1; /* Allow the preview section to grow */
-  margin-left: 2rem; /* Add some space between the sections */
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .navigation {
-    flex-direction: column;
-    align-items: center; /* Center items for mobile */
-  }
-
-  .navigation a {
-    margin-bottom: 0.5rem; /* Add space between links */
-  }
-
-  /* Smaller border radius for mobile */
-  .featured-artwork img,
-  .artwork-thumbnail img {
-    border-radius: 10px;
-  }
-  
-  /* Adjust grid for smaller screens */
-  .artwork-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
+.navigation-dots .dot:hover {
+  cursor: pointer;
+  background-color: #777;
 }
