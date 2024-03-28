@@ -20,32 +20,22 @@ body {
 }
 
 /* Input Group Styles */
-.input-group {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group label {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #333;
-  font-weight: bold;
-}
-
 .input-group input,
-.input-group textarea,
-.input-group button {
-  font-size: 14px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-  background-color: #fff;
+.input-group textarea {
+  font-size: 13px; /* Reduced from 14px for a slightly smaller appearance */
+  padding: 8px; /* Reduced from 10px for a slimmer form factor */
+  /* Other styles remain unchanged */
 }
 
-.input-group input[type="file"] {
-  border: none;
+.header nav {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+}
+
+.header nav a {
+  margin-left: 20px; /* Provides spacing between links */
+  /* Other styles remain unchanged */
 }
 
 /* Buttons */
@@ -207,4 +197,16 @@ button[type="submit"]:hover {
 .navigation-dots .dot:hover {
   cursor: pointer;
   background-color: #777;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
 }
